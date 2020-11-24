@@ -37,24 +37,45 @@ var owners = [
 
 
 // GET /api/owners
+app.get('/api/owners', (req, res) => {
+    res.send(owners);
+})
 
 // GET /api/owners/:id
+app.get('/api/owners', (req, res) => {
+    res.send(owners);
 
 // POST /api/owners
+app.post('/api/owners', (req, res) => {
+    res.send(owners);
 
 // PUT /api/owners/:id
+app.put('/api/owners', (req, res) => {
+    res.send(owners);
 
 // DELETE /api/owners/:id
+app.delete('/api/owners', (req, res) => {
+    res.send(owners);
 
 // GET /api/owners/:id/pets
+app.get('/api/owners', (req, res) => {
+    res.send(owners);
 
 // GET /api/owners/:id/pets/:petId
+app.get('/api/owners', (req, res) => {
+    res.send(owners);
 
 // POST /api/owners/:id/pets
+app.post('/api/owners', (req, res) => {
+    res.send(owners);
 
 // PUT /api/owners/:id/pets/:petId
+app.put('/api/owners', (req, res) => {
+    res.send(owners);
 
 // DELETE /api/owners/:id/pets/:petId
+app.delete('/api/owners', (req, res) => {
+    res.send(owners);
 
 
 app.listen(3000, function(){
