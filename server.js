@@ -1,4 +1,5 @@
 var express = require('express');
+const port = 3000;
 var bodyParser = require('body-parser');
 
 var app = express();
@@ -42,40 +43,56 @@ app.get('/api/owners', (req, res) => {
 })
 
 // GET /api/owners/:id
-app.get('/api/owners', (req, res) => {
+app.get('/api/owners/:id', (req, res) => {
     res.send(owners);
+})
 
 // POST /api/owners
 app.post('/api/owners', (req, res) => {
     res.send(owners);
+})
+
 
 // PUT /api/owners/:id
-app.put('/api/owners', (req, res) => {
+app.put('/api/owners/:id', (req, res) => {
     res.send(owners);
+})
+
 
 // DELETE /api/owners/:id
-app.delete('/api/owners', (req, res) => {
+app.delete('/api/owners/:id', (req, res) => {
     res.send(owners);
+})
+
 
 // GET /api/owners/:id/pets
-app.get('/api/owners', (req, res) => {
+app.get('/api/owners:id/pets', (req, res) => {
     res.send(owners);
+})
+
 
 // GET /api/owners/:id/pets/:petId
-app.get('/api/owners', (req, res) => {
+app.get('/api/owners/:id/pets/:petId', (req, res) => {
     res.send(owners);
+})
+
 
 // POST /api/owners/:id/pets
-app.post('/api/owners', (req, res) => {
+app.post('/api/owners/:id/pets', (req, res) => {
     res.send(owners);
+})
+
 
 // PUT /api/owners/:id/pets/:petId
-app.put('/api/owners', (req, res) => {
+app.put('/api/owners/:id/pets/:petId', (req, res) => {
     res.send(owners);
+})
+
 
 // DELETE /api/owners/:id/pets/:petId
-app.delete('/api/owners', (req, res) => {
+app.delete('/api/owners/:id/pets/:petId', (req, res) => {
     res.send(owners);
+})
 
 
 app.listen(3000, function(){
